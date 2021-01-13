@@ -57,6 +57,27 @@
   font-size: 25px;
 }
 
+@media only screen and (max-width: 500px) {
+  .number {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    font-size: 15px;
+    border-radius: 12.5px;
+    display: inline-block;
+  }
+
+  .star {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  
+  .star::after {
+    content: "\2605";
+    font-size: 20px;
+  }
+}
+
 .number:focus,
 .number:active {
   outline: none;
